@@ -6,8 +6,8 @@
 ])
 <div
     class="shadow-[0px_0px_5px_5px_#f5f5f5] md:mx-[67px] my-[30px] rounded-[15px] content-[''] table clear-both sm:ml-0 sm:mr-0">
-    <div class="float-left m-[10px] w-[60px] h-[60px] bg-[url(images/yogaDefault.jpg)] bg-cover bg-center rounded-[50%] border-[3px] border-[solid] border-[#F0F0F0]"
-        style="border: none; background-image: url('images/nOrange.jpg')"></div>
+    <div class="float-left m-[10px] w-[60px] h-[60px] bg-[url(/images/image001.jpg)] bg-cover bg-center rounded-[50%] border-[3px] border-[solid] border-[#F0F0F0]"
+        style="border: none; background-image: url('/images/image003.jpg')"></div>
     <div
         class="float-left leading-[1.4] p-[10px] text-left text-[1rem] w-[700px]s md:w-[600px] sm:w-[unset]">
         <p class="text-[smaller]">
