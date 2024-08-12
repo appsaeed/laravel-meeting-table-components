@@ -1,18 +1,20 @@
 @props([
-    'name' => 'Vinyasa',
-    'time' => '09:30',
-    'link' => '#',
-    'location' => 'Isabelle Watton',
-    'image' => 'https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/image002.jpg',
-    'time_reminder' => '60mins',
-    'finished' => null,
-    'tooltip' => 'More info or book',
-    'studio' => null,
-    'online' => null,
-    'event' => null,
+    'name'              => 'Vinyasa',
+    'time'              => '09:30',
+    'link'              => '#',
+    'location'          => 'Isabelle Watton',
+    'image'             => 'https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/image002.jpg',
+    'time_reminder'     => '60mins',
+    'finished'          => null,
+    'tooltip'           => 'More info or book',
+    'studio'            => null,
+    'online'            => null,
+    'event'             => null,
+    'items'             => '',
+    'class'             => '',
 ])
 
-<div class="after:content-[''] after:table after:clear-both @if($finished && $finished != 'false') opacity-[25%] @endif">
+<div class="{{ $class }} after:content-[''] after:table after:clear-both @if($finished && $finished != 'false') opacity-[25%] @endif">
     <div class="float-left p-[10px] leading-[60px] text-[1rem] mt-14px" style="margin-top: 14px">{{ $time }}</div>
     <div class="float-left m-[10px] w-16 h-16 rounded-[50%] border-[3px] border-[solid] border-[#F0F0F0] mt-[23px] bg-no-repeat bg-cover"
         style="background-image: url('{{ $image }}')">
@@ -24,17 +26,17 @@
             <span class="text-[smaller] text-[#f68f1d]">Class finished</span>
         @endif
         <p class="mt-[8px] flex">
-            @if ($studio)
+            @if (str_contains(strtolower($items), 'studio'))
                 <a href="{{ $link }}">
                     <img src="https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/GreyStudio.png" class="h-6 pr-[10px]" />
                 </a>
             @endif
-            @if ($online)
+            @if (str_contains(strtolower($items), 'online'))
                 <a href="{{ $link }}">
                     <img src="https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/GreyOnline.png" class="h-6 pr-[10px]" />
                 </a>
             @endif
-            @if ($event)
+            @if (str_contains(strtolower($items), 'event'))
                 <a href="{{ $link }}">
                     <img src="https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/GreyEvent.png" class="h-6 pr-[10px]" />
                 </a>

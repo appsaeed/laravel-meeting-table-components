@@ -26,7 +26,7 @@
             time_reminder='60mins' 
             finished=true
             tooltip='More info or book'
-            studio="true" 
+            items="studio, online" 
         />
         <x-meeting-user 
             name='Vinyasa' 
@@ -37,9 +37,7 @@
             time_reminder='60mins' 
             finished='' 
             tooltip='More info or book'
-            studio="true" 
-            online='true' 
-            event='true' 
+            items="studio online event"
         />
       </div>
 </body>

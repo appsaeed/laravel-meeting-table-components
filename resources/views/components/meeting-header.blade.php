@@ -1,11 +1,11 @@
 @props([
-    'title' => 'Unlimited classes for 30 days is £30',
-    'description' => 'A simple subscription you can start and
-            stop at the click of a button.',
-    'sub_title' => 'Click a class to book in and get started.',
+    'title'         => 'Unlimited classes for 30 days is £30',
+    'description'   => 'A simple subscription you can start and stop at the click of a button.',
+    'sub_title'     => 'Click a class to book in and get started.',
+    'class'         => '',
 ])
 <div
-    class="shadow-[0px_0px_5px_5px_#f5f5f5] md:mx-[67px] my-[30px] rounded-[15px] content-[''] table clear-both sm:ml-0 sm:mr-0">
+    class="{{ $class }} shadow-[0px_0px_5px_5px_#f5f5f5] md:mx-[67px] my-[30px] rounded-[15px] content-[''] table clear-both sm:ml-0 sm:mr-0">
     <div class="float-left m-[10px] w-[60px] h-[60px] bg-[url(https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/image001.jpg)] bg-cover bg-center rounded-[50%] border-[3px] border-[solid] border-[#F0F0F0]"
         style="border: none; background-image: url('https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/image003.jpg')"></div>
     <div
