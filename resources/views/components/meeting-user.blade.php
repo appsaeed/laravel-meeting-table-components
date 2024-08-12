@@ -6,20 +6,19 @@
     'image' => '/images/image002.jpg',
     'time_reminder' => '60mins',
     'finished' => null,
-    'opacity'  => true,
     'tooltip' => 'More info or book',
     'studio' => null,
     'online' => null,
     'event' => null,
 ])
 
-<div class="after:content-[''] after:table after:clear-both @if($opacity) opacity-[25%] @endif">
+<div class="after:content-[''] after:table after:clear-both @if($finished && $finished != 'false') opacity-[25%] @endif">
     <div class="float-left p-[10px] leading-[60px] text-[1rem] mt-14px" style="margin-top: 14px">{{ $time }}</div>
     <div class="float-left m-[10px] w-16 h-16 rounded-[50%] border-[3px] border-[solid] border-[#F0F0F0] mt-[23px]"
         style="background-image: url('{{ $image }}')">
     </div>
     <div class="float-left leading-[1.4] p-[10px] text-left text-[1rem]">
-        <b class="text-[1.5rem] font-[Josefin_Sans,_Helvetica,_Arial,_sans-serif]">{{ $name }}</b>
+        <b class="text-[1.5rem] font-[josefin-sans,_Helvetica,_Arial,_sans-serif]">{{ $name }}</b>
         <br />{{ $location }} ~ {{ $time_reminder }} <br />
         @if ($finished)
             <span class="text-[smaller] text-[#f68f1d]">Class finished</span>

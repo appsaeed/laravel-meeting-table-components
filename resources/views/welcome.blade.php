@@ -24,7 +24,7 @@
             location='Isabelle Watton'
             image='/images/image002.jpg' 
             time_reminder='60mins' 
-            finished=true, 
+            finished=true
             tooltip='More info or book'
             studio="true" 
         />
@@ -33,10 +33,9 @@
             time='09:30' 
             link='#' 
             location='Isabelle Watton'
-            opacity=""
             image='/images/image002.jpg' 
             time_reminder='60mins' 
-            finished=true, 
+            finished='' 
             tooltip='More info or book'
             studio="true" 
             online='true' 

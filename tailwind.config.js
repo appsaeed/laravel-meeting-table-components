@@ -1,9 +1,7 @@
-import defaultTheme from 'tailwindcss/defaultTheme';
 
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
-        './vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php',
         './storage/framework/views/*.php',
         './resources/views/**/*.blade.php',
     ],
@@ -11,7 +9,9 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                'open-sans': ['"Open Sans"', 'sans-serif'],
+                'josefin-sans': ['"Josefin Sans"', 'sans-serif'],
+                'work-sans': ['"Work Sans"', 'sans-serif'],
             },
         },
     },
@@ -19,13 +19,10 @@ export default {
     plugins: [
         function ({ addUtilities }) {
             const newUtilities = {
-                '.clearfix::after': {
-                    content: '""',
-                    display: 'table',
-                    clear: 'both',
+                'body': {
+                    'font-family': '"Work Sans", sans-serif',
                 },
             }
-
             addUtilities(newUtilities)
         }
     ],
