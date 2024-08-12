@@ -22,7 +22,7 @@
             time='09:30' 
             link='#' 
             location='Isabelle Watton'
-            image='/images/image002.jpg' 
+            image='https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/image003.jpg' 
             time_reminder='60mins' 
             finished=true
             tooltip='More info or book'
@@ -33,7 +33,7 @@
             time='09:30' 
             link='#' 
             location='Isabelle Watton'
-            image='/images/image002.jpg' 
+            image='https://raw.githubusercontent.com/appsaeed/laravel-meeting-table-components/main/public/images/image002.jpg' 
             time_reminder='60mins' 
             finished='' 
             tooltip='More info or book'
