@@ -3,14 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laravel 5 Components</title>
     @vite('resources/css/app.css')
 </head>
 
 <body class="!font-[Work_sans]">
-    <div class="max-w-[1000px] mx-auto my-[30px] sm:mt-0 sm:px-[10px] sm:py-0">
+    <div class="mx-auto md:w-[800px] max-md:w-full my-[30px]">
         
         <x-studio-profile 
             name="Vinyasa" 
@@ -25,7 +25,9 @@
             source="Studio and zoom" 
         />
 
-        <x-studio-about  />
+        <x-studio-about 
+            content="Suitable for all. A flowing class that connects mind, body, movement and breath, united with relaxing  music.<br>This class will invite you to listen to your body through a mix of dynamic flows, and energising postures to nourish and challenge your body."
+        />
 
         <x-studio-actions 
             link_find_us='#finding-the-studio' 
