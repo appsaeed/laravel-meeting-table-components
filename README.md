@@ -1,19 +1,69 @@
 # Uses
 
-<pre>
-name:           name of the user
-time:           time 
-link:           sources link
-location:       user location
-image:          image url user avatar
-time_reminder:  place time remembered
-finished:       true or false, or empty means false like finished=""
-tooltip:        tooltip text what you want
-items:          item is available studio, online, event
-class:          custom css class name
-</pre>
+## Component 1
+
+    <x-studio-profile 
+        name="name of the user" 
+        location="user location or address"
+        image_url="user prifile image url"
+    />
+
+## Component 2 
+
+    <x-studio-timetable 
+        date='Sun 28 Aug' 
+        time='3:00pm' 
+        remember_time='30mins' 
+        source="This is optional default: Studio and zoom" 
+    />
+
+## Component 3 
+
+    <x-studio-about
+        title="about the title | default: About the class"
+        content="default: Empty!"
+    />
+
+## Component 4 
+
+    <x-studio-actions 
+        link_find_us='find us link | default: #' 
+        link_new_studio='new to studio link | | default: #'
+        link_howto_join='how to join link | default: # '
+    />
+
+## Component 5 
+
+**simple uses**
+
+    <x-studio-from />
+
+**with attributies all that support html form element**
+
+    <x-studio-from action="/action-url" onsubmit="return false;" id="my_form" />
+
+**Add new Html input/image etc elment (x-slot name="html" is required)**
+
+    <x-studio-form>
+        <x-slot name="html"> 
+            <input type="hidden" name="timetable_id" value="43092">
+            <img src="/path/to/image">
+            <button>click here</button>
+        </x-slot>              
+    </x-studio-form>
 
 
+**Update form header content (x-slot name="header" is required)**
+
+    <x-studio-form 
+        action="/action-url" 
+        onsubmit="return false;"
+    >
+        <x-slot name="header">
+            <b>New cotnent</b>
+            more content.....
+        </x-slot>                
+    </x-studio-form>
 
 
 ===============================================================================
