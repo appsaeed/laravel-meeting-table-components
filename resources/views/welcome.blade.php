@@ -28,9 +28,9 @@
         {{-- shadow  div component feel like a div and support all div attributes --}}
         <x-shadow class="mb-10">
 
-            {{-- shadow  div component can hold any components/elements --}}
+            {{-- shadow  div component can hold any components/elements/text/number etc --}}
            
-            {{-- prevous component example 1 --}}
+            {{-- exmaple 1 with prevous component --}}
             <x-meeting-user 
                 name='Vinyasa' 
                 time='' 
@@ -40,7 +40,7 @@
                 finished="yes"
             />
 
-            {{-- prevous component example 2 --}}
+            {{-- exmaple 2 with prevous component --}}
             <x-meeting-user 
                 name='Vinyasa' 
                 time='' 
